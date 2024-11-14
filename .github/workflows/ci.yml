@@ -50,4 +50,5 @@ jobs:
 
       - name: Run Tests
         run: |
-          docker-compose exec backend pytest tests/
+          docker-compose run --rm backend pytest tests/
+
